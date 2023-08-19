@@ -1,8 +1,10 @@
-// Lets create a dangling reference
 fn main() {
-    let reference_to_nothing = dangle();
-}
-fn dangle() -> &String {
-    let s = String::from("hello");
-    &s
+    // Create a vector with initial values
+    let vec = vec![1, 2, 3, 4];
+    // prinit each value in the vector
+    for  element in &vec {
+let incr = *element + 1;
+        println!("Increment was: {}", incr);
+        
+    }
 }
